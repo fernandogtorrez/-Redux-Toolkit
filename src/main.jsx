@@ -6,12 +6,12 @@ import App from './App'
 import './index.css'
 import { PokemonApp } from './PokemonApp'
 import { TodoApp } from './TodoApp'
+import CounterApp from './CounterApp'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
     <Provider store={store}>
-      {/* <PokemonApp/> */}
+      <PokemonApp/>
       <TodoApp/>
+      <CounterApp/>
     </Provider>
-  </React.StrictMode>
 )
